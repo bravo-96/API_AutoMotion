@@ -6,10 +6,10 @@ namespace Automoviles.DataAccess
     public class AutoDbContext : DbContext
     {
 
-        public AutoDbContext( DbContextOptions<AutoDbContext> options ) : base(options)
-        {
+        //public AutoDbContext( DbContextOptions<AutoDbContext> options ) : base(options)
+        //{
 
-        }
+        //}
 
         protected override void OnModelCreating( ModelBuilder builder )
         {
@@ -22,7 +22,7 @@ namespace Automoviles.DataAccess
 
 
             //optionsBuilder.UseSqlServer(@"Server=sbadesa017;Database=ACADEMY_NET_ANTO;User Id = net_anto; Password=Academy_2022");
-            //optionsBuilder.UseSqlServer(@"Server=.; Database=Auto_Motion; Trusted_Connection=True"); // DB_LOCAL-PC_JOSE_CASA
+            optionsBuilder.UseSqlServer(@"Server=.; Database=Auto_Motion; Trusted_Connection=True"); // DB_LOCAL-PC_JOSE_CASA
 
             //comentar OnConfiguring  cuando  se configure en BASE del constructor
         }
@@ -30,12 +30,12 @@ namespace Automoviles.DataAccess
         public DbSet<Color> Colores { get; set; }
         public DbSet<Combustible> Combustibles { get; set; }
         public DbSet<Marca> Marcas { get; set; }
+        public DbSet<Modelo> Modelos { get; set; }
         public DbSet<Pais> Paises { get; set; }
         public DbSet<Seguro> Seguros { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
-        public DbSet<Vehiculo> Vehiculos { get; set; }
         public DbSet<Transmision> Transmisiones { get; set; }
-        public DbSet<Modelo> Modelos { get; set; }
+        public DbSet<Vehiculo> Vehiculos { get; set; }
     }
 }
 

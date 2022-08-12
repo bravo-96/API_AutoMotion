@@ -10,27 +10,16 @@ namespace Automoviles.Models.DTO
         [Key]                                                           /*ID*/
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "El campo {0} es requerido")]
-        [Column("id")]
         [Display(Name = "Código Del Vehiculo")]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "El campo {0} es requerido")]         /*MODELO*/
-        [Column("Modelo")]
-        [Display(Name = "Modelo del Vehiculo")]
-        [ForeignKey("ModeloId")]
-        public int ModeloId { get; set; }
-        public ModeloDTO Modelo { get; set; }
-
         [Display(Name = "Precio")]                     /*PRECIO*/
         [Required(ErrorMessage = "El campo {0} es requerido")]
-        [Column("PrecioId")]
         [DataType(DataType.Currency)]
-        public string Precio { get; set; }
+        public decimal Precio { get; set; }
 
         [StringLength(4)]                                           /*AÑO*/
-        [Column("Año")]
         [Display(Name = "Año")]
-        [DataType(DataType.Text)]
         public string Anio { get; set; }
 
 
@@ -38,52 +27,43 @@ namespace Automoviles.Models.DTO
         //////////////////////////////////////////////////////////////////
         // Foreing Keys 
 
+        [Required(ErrorMessage = "El campo {0} es requerido")]         /*MODELO FK*/
+        [Display(Name = "Modelo del Vehiculo")]
+        public int ModeloId { get; set; }
+        public ModeloDTO Modelo { get; set; }
+
         [Required(ErrorMessage = "El campo {0} es requerido")]          /*PAIS FK.*/
-        [Column("PaisId")]
         [Display(Name = "Pais de origen del Vehiculo")]
-        [ForeignKey("PaisId")]
         public int PaisId { get; set; }
         public PaisDTO Pais { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido")]          /*COLOR FK.*/
-        [Column("ColorId")]
         [Display(Name = "Color del Vehiculo")]
-        [ForeignKey("ColorId")]
         public int ColorId { get; set; }
         public ColorDTO Color { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido")]       /*COMBUSTIBLE FK.*/
-        [Column("CombustibleId")]
         [Display(Name = "Combustible del Vehiculo")]
-        [ForeignKey("CombustibleId")]
         public int CombustibleId { get; set; }
         public CombustibleDTO Combustible { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido")]       /*SEGURO FK.*/
-        [Column("SeguroId")]
         [Display(Name = "Seguro del Vehiculo")]
-        [ForeignKey("SeguroId")]
         public int SeguroId { get; set; }
         public SeguroDTO Seguro { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es requerido")]      /*TIPO FK.*/
-        [Column("TipoId")]
         [Display(Name = "Tipo de Vehiculo")]
-        [ForeignKey("TipoId")]
         public int TipoId { get; set; }
         public TipoDTO Tipo { get; set; }
 
         [Display(Name = "Nombre de la Marca:")]                       /*MARCA FK.*/
-        [Required(ErrorMessage = "El campo {0} es requerido")]
-        [ForeignKey("MarcaId")]
         [Column("MarcaId")]
         public int MarcaId { get; set; }
         public MarcaDTO Marca { get; set; }
 
         [Display(Name = "Tipo de transmisión:")]                       /*Transmision FK.*/
         [Required(ErrorMessage = "El campo {0} es requerido")]
-        [ForeignKey("TrnasmisionId")]
-        [Column("TransmisionId")]
         public int TransmisionId { get; set; }
         public TransmisionDTO Transmision { get; set; }
 

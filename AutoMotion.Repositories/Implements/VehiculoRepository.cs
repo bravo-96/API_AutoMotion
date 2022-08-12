@@ -28,28 +28,30 @@ namespace AutoMotion.Repositories.Implements
 
         public async Task<IEnumerable<Vehiculo>> GetAll()
         {
-            return await _context.Vehiculos.Include(x => x.Color)
-                                           .Include(x => x.Combustible)
-                                           .Include(x => x.Marca)
-                                           .Include(x => x.Modelo)
-                                           .Include(x => x.Pais)
-                                           .Include(x => x.Seguro)
-                                           .Include(x => x.Tipo)
-                                           .Include(x => x.Transmision)
-                                           .ToListAsync();
+            return await _context.Vehiculos
+                                    //.Include(x => x.Color)
+                                    //.Include(x => x.Combustible)
+                                    //.Include(x => x.Marca)
+                                    //.Include(x => x.Modelo)
+                                    //.Include(x => x.Pais)
+                                    //.Include(x => x.Seguro)
+                                    //.Include(x => x.Tipo)
+                                    //.Include(x => x.Transmision) // NULL
+                                    .ToListAsync();
         }
 
         public async Task<Vehiculo> GetById( int id )
         {
             return await _context.Vehiculos.Include(x => x.Color)
-                                           .Include(x => x.Combustible)
-                                           .Include(x => x.Marca)
-                                           .Include(x => x.Modelo)
-                                           .Include(x => x.Pais)
-                                           .Include(x => x.Seguro)
-                                           .Include(x => x.Tipo)
-                                           .Include(x => x.Transmision)
-                                           .FirstOrDefaultAsync(x => x.Id == id);
+                                    //.Include(x => x.Color)
+                                    //.Include(x => x.Combustible)
+                                    //.Include(x => x.Marca)
+                                    //.Include(x => x.Modelo)
+                                    //.Include(x => x.Pais)
+                                    //.Include(x => x.Seguro)
+                                    //.Include(x => x.Tipo)
+                                    //.Include(x => x.Transmision) // NULL
+                                    .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Vehiculo> Insert( Vehiculo model )

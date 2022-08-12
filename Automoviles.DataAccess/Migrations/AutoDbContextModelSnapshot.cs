@@ -18,203 +18,180 @@ namespace Automoviles.DataAccess.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Automoviles.Models.Color", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Color", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)")
-                        .HasColumnName("nombre");
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Colores");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Combustible", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Combustible", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasColumnName("nombre");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Combustibles");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Marca", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Marca", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)")
-                        .HasColumnName("nombre");
+                        .HasColumnType("nvarchar(60)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Marcas");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Modelo", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Modelo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)")
-                        .HasColumnName("Modelo");
+                        .HasColumnType("nvarchar(60)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Modelos");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Pais", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Pais", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)")
-                        .HasColumnName("nombre");
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Paises");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Seguro", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Seguro", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)")
-                        .HasColumnName("nombre");
+                        .HasColumnType("nvarchar(60)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Seguros");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Tipo", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Tipo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasColumnName("nombre");
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Tipos");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Transmision", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Transmision", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasColumnName("Tipo");
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Transmisiones");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Vehiculo", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Vehiculo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Anio")
+                        .HasMaxLength(4)
+                        .HasColumnType("nvarchar(4)");
+
                     b.Property<int>("ColorId")
-                        .HasColumnType("int")
-                        .HasColumnName("ColorId");
+                        .HasColumnType("int");
 
                     b.Property<int>("CombustibleId")
-                        .HasColumnType("int")
-                        .HasColumnName("CombustibleId");
+                        .HasColumnType("int");
 
                     b.Property<int>("MarcaId")
                         .HasColumnType("int")
                         .HasColumnName("MarcaId");
 
                     b.Property<int>("ModeloId")
-                        .HasColumnType("int")
-                        .HasColumnName("Modelo");
+                        .HasColumnType("int");
 
                     b.Property<int>("PaisId")
-                        .HasColumnType("int")
-                        .HasColumnName("PaisId");
+                        .HasColumnType("int");
 
-                    b.Property<string>("Precio")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("PrecioId");
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("SeguroId")
-                        .HasColumnType("int")
-                        .HasColumnName("SeguroId");
+                        .HasColumnType("int");
 
                     b.Property<int>("TipoId")
-                        .HasColumnType("int")
-                        .HasColumnName("TipoId");
+                        .HasColumnType("int");
 
-                    b.Property<string>("anio")
-                        .HasMaxLength(4)
-                        .HasColumnType("nvarchar(4)")
-                        .HasColumnName("Año");
+                    b.Property<int>("TransmisionId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -232,50 +209,58 @@ namespace Automoviles.DataAccess.Migrations
 
                     b.HasIndex("TipoId");
 
+                    b.HasIndex("TransmisionId");
+
                     b.ToTable("Vehiculos");
                 });
 
-            modelBuilder.Entity("Automoviles.Models.Vehiculo", b =>
+            modelBuilder.Entity("Automoviles.Models.Entities.Vehiculo", b =>
                 {
-                    b.HasOne("Automoviles.Models.Color", "Color")
+                    b.HasOne("Automoviles.Models.Entities.Color", "Color")
                         .WithMany()
                         .HasForeignKey("ColorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Automoviles.Models.Combustible", "Combustible")
+                    b.HasOne("Automoviles.Models.Entities.Combustible", "Combustible")
                         .WithMany()
                         .HasForeignKey("CombustibleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Automoviles.Models.Marca", "Marca")
+                    b.HasOne("Automoviles.Models.Entities.Marca", "Marca")
                         .WithMany()
                         .HasForeignKey("MarcaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Automoviles.Models.Modelo", "Modelo")
+                    b.HasOne("Automoviles.Models.Entities.Modelo", "Modelo")
                         .WithMany()
                         .HasForeignKey("ModeloId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Automoviles.Models.Pais", "Pais")
+                    b.HasOne("Automoviles.Models.Entities.Pais", "Pais")
                         .WithMany()
                         .HasForeignKey("PaisId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Automoviles.Models.Seguro", "Seguro")
+                    b.HasOne("Automoviles.Models.Entities.Seguro", "Seguro")
                         .WithMany()
                         .HasForeignKey("SeguroId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Automoviles.Models.Tipo", "Tipo")
+                    b.HasOne("Automoviles.Models.Entities.Tipo", "Tipo")
                         .WithMany()
                         .HasForeignKey("TipoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Automoviles.Models.Entities.Transmision", "Transmision")
+                        .WithMany()
+                        .HasForeignKey("TransmisionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -292,6 +277,8 @@ namespace Automoviles.DataAccess.Migrations
                     b.Navigation("Seguro");
 
                     b.Navigation("Tipo");
+
+                    b.Navigation("Transmision");
                 });
 #pragma warning restore 612, 618
         }

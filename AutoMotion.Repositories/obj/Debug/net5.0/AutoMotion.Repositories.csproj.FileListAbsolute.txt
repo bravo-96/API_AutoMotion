@@ -1,0 +1,17 @@
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\bin\Debug\net5.0\AutoMotion.Repositories.deps.json
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\bin\Debug\net5.0\AutoMotion.Repositories.dll
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\bin\Debug\net5.0\AutoMotion.Repositories.pdb
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\bin\Debug\net5.0\Automoviles.DataAccess.dll
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\bin\Debug\net5.0\Automoviles.Models.dll
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\bin\Debug\net5.0\Automoviles.DataAccess.pdb
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\bin\Debug\net5.0\Automoviles.Models.pdb
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.csproj.AssemblyReference.cache
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.AssemblyInfoInputs.cache
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.AssemblyInfo.cs
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.csproj.CopyComplete
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.dll
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\refint\AutoMotion.Repositories.dll
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\AutoMotion.Repositories.pdb
+C:\Users\josePC\Desktop\AutoMotion\AutoMotion.Repositories\obj\Debug\net5.0\ref\AutoMotion.Repositories.dll

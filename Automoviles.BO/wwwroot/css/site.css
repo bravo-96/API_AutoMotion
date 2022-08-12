@@ -1,0 +1,370 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.fa {
+    color: black;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: white !important; /*color AutoMotion*/
+}
+
+/*navbar letracolor*/
+.text-light {
+    color: #f8f9fa !important;
+}
+
+/*navbar fondocolor*/
+.bg-black {
+    background-color: black !important;
+}
+
+/*imagen porsche*/
+.hero_img {
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+/*vehiculos destacados*/
+.container-homepage {
+    background-color: black;
+    height: 200px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    color: #adb5bd;
+}
+
+
+/*CARDS*/
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+    .section-products .header {
+        margin-bottom: 50px;
+    }
+
+        .section-products .header h3 {
+            font-size: 1rem;
+            color: #fe302f;
+            font-weight: 500;
+        }
+
+        .section-products .header h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #444444;
+        }
+
+    .section-products .single-product {
+        margin-bottom: 26px;
+    }
+
+        .section-products .single-product .part-1 {
+            position: relative;
+            height: 290px;
+            max-height: 290px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+            .section-products .single-product .part-1::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                transition: all 0.3s;
+            }
+
+        .section-products .single-product:hover .part-1::before {
+            transform: scale(1.2,1.2) rotate(5deg);
+        }
+
+        .section-products .single-product.img-1 .part-1::before {
+            background-image: url('../IMG/BMW4000.jpeg');
+            background-size: cover;
+            transition: all 0.3s;
+        }
+
+        .section-products .single-product.img-2 .part-1::before {
+            background: url('../IMG/JeepRenegade.jpeg') no-repeat center;
+            background-size: cover;
+        }
+
+        .section-products .single-product.img-3 .part-1::before {
+            background: url('../IMG/ToyotaCorollaCross.jpeg') no-repeat center;
+            background-size: cover;
+        }
+
+        .section-products .single-product.img-4 .part-1::before {
+            background: url('../IMG/MercedezBenzGLA.jpeg') no-repeat center;
+            background-size: cover;
+        }
+
+        .section-products .single-product.img-5 .part-1::before {
+            background: url('../IMG/MercedezBenzGLC300.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        .section-products .single-product.img-6 .part-1::before {
+            background: url('../IMG/Audi RS5 Quattro.jpeg') no-repeat center;
+            background-size: cover;
+        }
+
+        .section-products .single-product.img-7 .part-1::before {
+            background: url('../IMG/HarleySoft.jpeg') no-repeat center;
+            background-size: cover;
+        }
+
+        .section-products .single-product.img-8 .part-1::before {
+            background: url('../IMG/Harley-Davidson-Iron-883.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .section-products .single-product .part-1 .discount,
+        .section-products .single-product .part-1 .new {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            color: #ffffff;
+            background-color: #fe302f;
+            padding: 2px 8px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .section-products .single-product .part-1 .new {
+            left: 0;
+            background-color: #444444;
+        }
+
+        .section-products .single-product .part-1 ul {
+            position: absolute;
+            bottom: -41px;
+            left: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            opacity: 0;
+            transition: bottom 0.5s, opacity 0.5s;
+        }
+
+        .section-products .single-product:hover .part-1 ul {
+            bottom: 30px;
+            opacity: 1;
+        }
+
+        .section-products .single-product .part-1 ul li {
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+            .section-products .single-product .part-1 ul li a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background-color: #ffffff;
+                color: #444444;
+                text-align: center;
+                box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+                transition: color 0.2s;
+            }
+
+                .section-products .single-product .part-1 ul li a:hover {
+                    color: #fe302f;
+                }
+
+        .section-products .single-product .part-2 .product-title {
+            font-size: 1rem;
+        }
+
+        .section-products .single-product .part-2 h4 {
+            display: inline-block;
+            font-size: 1rem;
+        }
+
+        .section-products .single-product .part-2 .product-old-price {
+            position: relative;
+            padding: 0 7px;
+            margin-right: 2px;
+            opacity: 0.6;
+        }
+
+            .section-products .single-product .part-2 .product-old-price::after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #444444;
+                transform: translateY(-50%);
+            }
+
+/*END CARDS*/
+
+
+
+/* PROJECT CAROUSEL*/
+.projects-carousel-container {
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.carousel {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.title-projects {
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-shadow: 2px 1px 5px rgba(145, 150, 150, 0.18);
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: var(--purewhite);
+    font-size: 17px;
+    text-shadow: 2px 1px 5px rgba(145, 150, 150, 0.18);
+}
+
+
+
+/*FOOTER*/
+.footer-container {
+    background-color: var(--body--bg--white);
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-footer-container {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 30x;
+    margin-top: 290px;
+}
+
+.footer-map-container {
+    display: block;
+    margin-top: 39px;
+}
+
+/*PRE footer*/
+iframe {
+    height: 240px;
+    width: 800px;
+    padding-left: 200px;
+    padding-bottom:0;
+}
+
+p{
+    margin-top:0;
+    margin-bottom:120px;
+    padding-left:200px;
+    padding-right:0;
+    padding-bottom:30px;
+    color: white !important;
+}
+
+footer.footer-container{
+    background-color: black !important;
+}
+
+
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #e5e5e5;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #152015 !important;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: red !important;
+    background-color: red !important;
+    border-color: #1861ac;
+}
+
+.navbar {
+    background: black !important; /*works*/
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automoviles.Models", "AutomovilesES\Automoviles.Models.csproj", "{79315CBC-FC8C-42C8-9646-0322B4956DCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automoviles.DataAccess", "Automoviles.DataAccess\Automoviles.DataAccess.csproj", "{0DED3C11-ADE2-4A36-A348-18BF75F4E4FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automoviles.BO", "Automoviles.BO\Automoviles.BO.csproj", "{0F9E3261-204D-4573-9301-DC69DA25D829}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMotion.API", "AutoMotion.API\AutoMotion.API.csproj", "{F25CD525-436C-4E21-8375-9EE32A67DDE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMotion.Repositories", "AutoMotion.Repositories\AutoMotion.Repositories.csproj", "{AE4EC7F0-748B-4952-9A76-2D3BAA5FA2C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMotion.Services", "AutoMotion.Services\AutoMotion.Services.csproj", "{6A26A155-30AC-4930-BFF8-31DAC7A4558E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79315CBC-FC8C-42C8-9646-0322B4956DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79315CBC-FC8C-42C8-9646-0322B4956DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79315CBC-FC8C-42C8-9646-0322B4956DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79315CBC-FC8C-42C8-9646-0322B4956DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DED3C11-ADE2-4A36-A348-18BF75F4E4FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DED3C11-ADE2-4A36-A348-18BF75F4E4FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DED3C11-ADE2-4A36-A348-18BF75F4E4FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DED3C11-ADE2-4A36-A348-18BF75F4E4FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9E3261-204D-4573-9301-DC69DA25D829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9E3261-204D-4573-9301-DC69DA25D829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9E3261-204D-4573-9301-DC69DA25D829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F25CD525-436C-4E21-8375-9EE32A67DDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25CD525-436C-4E21-8375-9EE32A67DDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25CD525-436C-4E21-8375-9EE32A67DDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25CD525-436C-4E21-8375-9EE32A67DDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4EC7F0-748B-4952-9A76-2D3BAA5FA2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4EC7F0-748B-4952-9A76-2D3BAA5FA2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4EC7F0-748B-4952-9A76-2D3BAA5FA2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4EC7F0-748B-4952-9A76-2D3BAA5FA2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A26A155-30AC-4930-BFF8-31DAC7A4558E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A26A155-30AC-4930-BFF8-31DAC7A4558E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A26A155-30AC-4930-BFF8-31DAC7A4558E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A26A155-30AC-4930-BFF8-31DAC7A4558E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE3EEC68-3988-4DB8-ACCE-85C1C8B265FD}
+	EndGlobalSection
+EndGlobal

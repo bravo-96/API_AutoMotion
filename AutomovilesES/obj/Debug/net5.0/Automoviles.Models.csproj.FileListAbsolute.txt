@@ -22,3 +22,15 @@ C:\Users\josePC\Desktop\AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Mo
 C:\Users\josePC\Desktop\AutoMotion\AutomovilesES\obj\Debug\net5.0\refint\Automoviles.Models.dll
 C:\Users\josePC\Desktop\AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.pdb
 C:\Users\josePC\Desktop\AutoMotion\AutomovilesES\obj\Debug\net5.0\ref\Automoviles.Models.dll
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\bin\Debug\net5.0\Automoviles.Models.deps.json
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\bin\Debug\net5.0\Automoviles.Models.dll
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\bin\Debug\net5.0\ref\Automoviles.Models.dll
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\bin\Debug\net5.0\Automoviles.Models.pdb
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.csproj.AssemblyReference.cache
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.AssemblyInfoInputs.cache
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.AssemblyInfo.cs
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.csproj.CoreCompileInputs.cache
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.dll
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\ref\Automoviles.Models.dll
+C:\Users\jbravo\Desktop\API_AutoMotion\AutomovilesES\obj\Debug\net5.0\Automoviles.Models.pdb

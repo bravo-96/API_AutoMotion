@@ -7,11 +7,11 @@ namespace AutoMotion.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ColoresController : ControllerBase
+    public class ColorController : ControllerBase
     {
         private readonly IColorService _ColorService;
 
-        public ColoresController( IColorService colorService )
+        public ColorController( IColorService colorService )
         {
             _ColorService = colorService;
         }

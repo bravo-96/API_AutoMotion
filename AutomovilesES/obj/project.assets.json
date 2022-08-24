@@ -8,14 +8,10 @@
           "Microsoft.CSharp": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.1/AutoMapper.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/AutoMapper.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/AutoMapper.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.1/AutoMapper.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -121,19 +117,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josePC\\.nuget\\packages\\": {}
+    "C:\\Users\\jbravo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josePC\\Desktop\\AutoMotion\\AutomovilesES\\Automoviles.Models.csproj",
+      "projectUniqueName": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\Automoviles.Models.csproj",
       "projectName": "Automoviles.Models",
-      "projectPath": "C:\\Users\\josePC\\Desktop\\AutoMotion\\AutomovilesES\\Automoviles.Models.csproj",
-      "packagesPath": "C:\\Users\\josePC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josePC\\Desktop\\AutoMotion\\AutomovilesES\\obj\\",
+      "projectPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\Automoviles.Models.csproj",
+      "packagesPath": "C:\\Users\\jbravo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\josePC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jbravo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -170,8 +166,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -180,7 +175,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

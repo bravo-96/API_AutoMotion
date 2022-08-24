@@ -36,7 +36,7 @@ namespace AutoMotion.API
 
 
             services.AddDbContext<AutoDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AutoMotionDB"),
-               b => b.MigrationsAssembly("ABM.Cosmico.BE.API")));
+               b => b.MigrationsAssembly("AutomovilesEs.AutoMotion.API")));
 
             var mapperConfig = new MapperConfiguration(m =>
             {

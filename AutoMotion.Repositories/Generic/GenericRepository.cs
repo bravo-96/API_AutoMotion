@@ -28,7 +28,6 @@ namespace AutoMotion.Repositories.Generic
                 dbSet.Remove(model);
                 await _context.SaveChangesAsync();
             }
-
             return model;
         }
 

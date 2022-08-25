@@ -1,4 +1,5 @@
-﻿using AutoMotion.Repositories.Interfaces;
+﻿using AutoMotion.Repositories.Generic;
+using AutoMotion.Repositories.Interfaces;
 using Automoviles.DataAccess;
 using Automoviles.Models.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -7,26 +8,15 @@ using System.Threading.Tasks;
 
 namespace AutoMotion.Repositories.Implements
 {
-    public class VehiculoRepository : IVehiculoRepository
+    public class VehiculoRepository : GenericRepository<Vehiculo>, IVehiculoRepository
     {
-        private readonly AutoDbContext _context;
 
-        public VehiculoRepository( AutoDbContext context )
+        public VehiculoRepository( AutoDbContext context ) : base(context)
         {
             _context = context;
         }
-        public async Task Delete( int id )
-        {
-            var vehiculo = await GetById(id);
 
-            if( vehiculo != null )
-            {
-                _context.Vehiculos.Remove(vehiculo);
-                await _context.SaveChangesAsync();
-            }
-        }
-
-        public async Task<IEnumerable<Vehiculo>> GetAll()
+        public new async Task<IEnumerable<Vehiculo>> GetAll()
         {
             return await _context.Vehiculos
                                     .Include(x => x.Color)
@@ -40,7 +30,7 @@ namespace AutoMotion.Repositories.Implements
                                     .ToListAsync();
         }
 
-        public async Task<Vehiculo> GetById( int id )
+        public new async Task<Vehiculo> GetById( int id )
         {
             return await _context.Vehiculos
                                     .Include(x => x.Color)
@@ -52,20 +42,6 @@ namespace AutoMotion.Repositories.Implements
                                     .Include(x => x.Tipo)
                                     .Include(x => x.Transmision)
                                     .FirstOrDefaultAsync( x => x.Id == id );
-        }
-
-        public async Task<Vehiculo> Insert( Vehiculo model )
-        {
-            await _context.Vehiculos.AddAsync(model);
-            await _context.SaveChangesAsync();
-            return model;
-        }
-
-        public async Task<Vehiculo> Update( Vehiculo model )
-        {
-            _context.Vehiculos.Update(model);
-            await _context.SaveChangesAsync();
-            return model;
         }
     }
 }

@@ -7,11 +7,9 @@ namespace AutoMotion.Repositories.Implements
 {
     public class ColorRepository : GenericRepository<Color>, IColorRepository
     {
-        //private readonly AutoDbContext _context;
         public ColorRepository( AutoDbContext context ) : base(context)
         {
-            //_context = context;
-        }
 
+        }
     }
 }

@@ -7,6 +7,9 @@ namespace AutoMotion.Repositories.Implements
 {
     public class PaisRepository : GenericRepository<Pais>, IPaisRepository
     {
-        public PaisRepository( AutoDbContext context ) : base(context) { }
+        public PaisRepository( AutoDbContext context ) : base(context)
+        {
+
+        }
     }
 }

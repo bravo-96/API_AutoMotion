@@ -1,15 +1,10 @@
-﻿using Automoviles.Models.Entities;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using AutoMotion.Repositories.Generic;
+using Automoviles.Models.Entities;
 
 namespace AutoMotion.Repositories.Interfaces
 {
-    public interface IMarcaRepository
+    public interface IMarcaRepository : IGenericRepository<Marca>
     {
-        Task<Marca> Insert( Marca model );
-        Task<Marca> Update( Marca model );
-        Task Delete( int id );
-        Task<IEnumerable<Marca>> GetAll();
-        Task<Marca> GetById( int id );
+    
     }
 }

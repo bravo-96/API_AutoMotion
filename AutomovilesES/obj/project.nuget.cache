@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YBu12Vm8j/rkKbZlnJz9HWbA8JFP6OfpGp1+n+SbOGdxZ2mRXb8PBmKfouCTLi0+hg1vO/vJQwl2cXTiWuaDMQ==",
+  "dgSpecHash": "ZWOscPRVXwPyKOSbAt+zLbUB5I/oqwIraBB9uYWllBh8FPek2OC6M7Y9nbClys09xEvCdG1KZiPM5LF9aEtSfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\Automoviles.Models.csproj",
+  "projectFilePath": "C:\\Users\\josePC\\Desktop\\AutoMotion\\AutomovilesES\\Automoviles.Models.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jbravo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
-    "C:\\Users\\jbravo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\josePC\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\josePC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

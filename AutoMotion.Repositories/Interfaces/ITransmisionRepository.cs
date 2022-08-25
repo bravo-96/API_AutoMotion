@@ -1,15 +1,10 @@
-﻿using Automoviles.Models.Entities;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using AutoMotion.Repositories.Generic;
+using Automoviles.Models.Entities;
 
 namespace AutoMotion.Repositories.Interfaces
 {
-    public interface ITransmisionRepository
+    public interface ITransmisionRepository : IGenericRepository<Transmision>
     {
-        Task<Transmision> Insert( Transmision model );
-        Task<Transmision> Update( Transmision model );
-        Task Delete( int id );
-        Task<IEnumerable<Transmision>> GetAll();
-        Task<Transmision> GetById( int id );
+
     }
 }

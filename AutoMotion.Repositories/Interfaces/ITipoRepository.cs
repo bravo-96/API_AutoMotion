@@ -1,15 +1,10 @@
-﻿using Automoviles.Models.Entities;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using AutoMotion.Repositories.Generic;
+using Automoviles.Models.Entities;
 
 namespace AutoMotion.Repositories.Interfaces
 {
-    public interface ITipoRepository
+    public interface ITipoRepository : IGenericRepository<Tipo>
     {
-        Task<Tipo> Insert( Tipo model );
-        Task<Tipo> Update( Tipo model );
-        Task Delete( int id );
-        Task<IEnumerable<Tipo>> GetAll();
-        Task<Tipo> GetById( int id );
+
     }
 }

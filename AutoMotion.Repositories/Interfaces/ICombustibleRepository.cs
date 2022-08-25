@@ -1,15 +1,10 @@
-﻿using Automoviles.Models.Entities;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using AutoMotion.Repositories.Generic;
+using Automoviles.Models.Entities;
 
 namespace AutoMotion.Repositories.Interfaces
 {
-    public interface ICombustibleRepository
+    public interface ICombustibleRepository : IGenericRepository<Combustible>
     {
-        Task<Combustible> Insert( Combustible model );
-        Task<Combustible> Update( Combustible model );
-        Task Delete( int id );
-        Task<IEnumerable<Combustible>> GetAll();
-        Task<Combustible> GetById( int id );
+
     }
 }

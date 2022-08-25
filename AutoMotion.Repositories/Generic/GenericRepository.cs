@@ -3,9 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AutoMotion.Repositories.Generics
+namespace AutoMotion.Repositories.Generic
 {
-    class GenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T>
+        where T : class
     {
         internal AutoDbContext _context;
         internal DbSet<T> dbSet;
@@ -16,7 +17,6 @@ namespace AutoMotion.Repositories.Generics
         {
             _context = context;
             dbSet = context.Set<T>();
-
         }
 
         public async Task<T> Delete( int id )

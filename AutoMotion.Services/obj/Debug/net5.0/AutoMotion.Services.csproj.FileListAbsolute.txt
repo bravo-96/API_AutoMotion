@@ -22,11 +22,9 @@ C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\Auto
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\ref\AutoMotion.Services.dll
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\AutoMotion.Services.pdb
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\AutoMotion.Repositories.dll
-C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\Automoviles.DataAccess.dll
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\Automoviles.Models.dll
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\AutoMotion.Repositories.pdb
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\Automoviles.Models.pdb
-C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\Automoviles.DataAccess.pdb
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\obj\Debug\net5.0\AutoMotion.Services.csproj.AssemblyReference.cache
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\obj\Debug\net5.0\AutoMotion.Services.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\obj\Debug\net5.0\AutoMotion.Services.AssemblyInfoInputs.cache
@@ -36,3 +34,5 @@ C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\obj\Debug\net5.0\Auto
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\obj\Debug\net5.0\AutoMotion.Services.dll
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\obj\Debug\net5.0\ref\AutoMotion.Services.dll
 C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\obj\Debug\net5.0\AutoMotion.Services.pdb
+C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\AutoMotion.DataAccess.dll
+C:\Users\jbravo\Desktop\API_AutoMotion\AutoMotion.Services\bin\Debug\net5.0\AutoMotion.DataAccess.pdb

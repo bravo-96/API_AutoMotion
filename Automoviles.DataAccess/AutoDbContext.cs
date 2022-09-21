@@ -37,6 +37,7 @@ namespace Automoviles.DataAccess
         public DbSet<Seguro> Seguros { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
         public DbSet<Transmision> Transmisiones { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Vehiculo> Vehiculos { get; set; }
     }
 }

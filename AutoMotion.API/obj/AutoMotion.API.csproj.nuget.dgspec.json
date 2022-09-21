@@ -39,6 +39,9 @@
               },
               "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\Automoviles.Models.csproj": {
                 "projectPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\Automoviles.Models.csproj"
+              },
+              "C:\\Users\\jbravo\\Desktop\\AutoMotion\\AutoMotion.Authorization\\AutoMotion.Authorization.csproj": {
+                "projectPath": "C:\\Users\\jbravo\\Desktop\\AutoMotion\\AutoMotion.Authorization\\AutoMotion.Authorization.csproj"
               }
             }
           }
@@ -60,6 +63,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -187,6 +194,24 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.DirectoryServices.AccountManagement": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -210,7 +235,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\Automoviles.DataAccess\\Automoviles.DataAccess.csproj",
-        "projectName": "Automoviles.DataAccess",
+        "projectName": "AutoMotion.DataAccess",
         "projectPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\Automoviles.DataAccess\\Automoviles.DataAccess.csproj",
         "packagesPath": "C:\\Users\\jbravo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\Automoviles.DataAccess\\obj\\",
@@ -325,6 +350,82 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jbravo\\Desktop\\AutoMotion\\AutoMotion.Authorization\\AutoMotion.Authorization.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jbravo\\Desktop\\AutoMotion\\AutoMotion.Authorization\\AutoMotion.Authorization.csproj",
+        "projectName": "AutoMotion.Authorization",
+        "projectPath": "C:\\Users\\jbravo\\Desktop\\AutoMotion\\AutoMotion.Authorization\\AutoMotion.Authorization.csproj",
+        "packagesPath": "C:\\Users\\jbravo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jbravo\\Desktop\\AutoMotion\\AutoMotion.Authorization\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jbravo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\Automoviles.Models.csproj": {
+                "projectPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\AutomovilesES\\Automoviles.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.23.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.23.1, )"
             }
           },
           "imports": [

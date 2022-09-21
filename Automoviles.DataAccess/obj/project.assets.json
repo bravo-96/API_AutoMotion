@@ -5850,7 +5850,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\Automoviles.DataAccess\\Automoviles.DataAccess.csproj",
-      "projectName": "Automoviles.DataAccess",
+      "projectName": "AutoMotion.DataAccess",
       "projectPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\Automoviles.DataAccess\\Automoviles.DataAccess.csproj",
       "packagesPath": "C:\\Users\\jbravo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jbravo\\Desktop\\API_AutoMotion\\Automoviles.DataAccess\\obj\\",

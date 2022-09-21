@@ -1494,7 +1494,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Automoviles.DataAccess/1.0.0": {
+      "AutoMotion.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1503,10 +1503,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
         "compile": {
-          "bin/placeholder/Automoviles.DataAccess.dll": {}
+          "bin/placeholder/AutoMotion.DataAccess.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Automoviles.DataAccess.dll": {}
+          "bin/placeholder/AutoMotion.DataAccess.dll": {}
         }
       },
       "Automoviles.Models/1.0.0": {
@@ -5750,7 +5750,7 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Automoviles.DataAccess/1.0.0": {
+    "AutoMotion.DataAccess/1.0.0": {
       "type": "project",
       "path": "../Automoviles.DataAccess/Automoviles.DataAccess.csproj",
       "msbuildProject": "../Automoviles.DataAccess/Automoviles.DataAccess.csproj"
@@ -5763,7 +5763,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Automoviles.DataAccess >= 1.0.0",
+      "AutoMotion.DataAccess >= 1.0.0",
       "Automoviles.Models >= 1.0.0"
     ]
   },
